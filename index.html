@@ -5,18 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
     <title>Vite App</title>
   </head>
   <body>
     <header class="header fixed">
         <div class="row-nav row a-center">
           <div class="col-2">
-            <img
-              class="logo"
-              src="img/logo.png"
-              alt=""
-            />
+            <div class="logo">
+              <img
+                src="public/img/logo.png"
+                alt=""
+              />
+            </div>
           </div>
 
           <div class="col-8">
@@ -46,55 +47,264 @@
           <div class="col-2">
             <div class="features d-flex a-center j-end">
               <div class="cart">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
-                <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
-                </svg>&nbsp; &nbsp;&nbsp;
+                <i class="bi bi-cart3"></i>
               </div>
 
               <div class="search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg>&nbsp; &nbsp;&nbsp;
+                <i class="bi bi-search"></i>
               </div>
 
-              <div class="user"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-          </svg></div>
+              <div class="user"><button id="myBtn"><i class="bi bi-person-circle"></i></button></div>
+              
             </div>
+              
           </div>
         </div>
     </div>
     </header>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <form action="#">
+          <div class="">
+            <span class="close">&times;</span>
+            <div class="label"><label for="">Username *</label></div>
+            <div class="username"><input type="text" placeholder="Username"></div><br>
 
-    <div class="content">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-          <img src="img/slide-1-1920x850.jpg" class="d-block w-100" alt="...">
+            <div class="label"><label for="">Password *</label></div>
+            <div class="password"><input type="text" placeholder="Password"></div><br>
           </div>
-        <div class="carousel-item">
-          <img src="img/slide-2-1920x850.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/slide-3-1920x850.jpg" class="d-block w-100" alt="...">
-        </div>
+        </form>
+
+      </div>   
+    </div>
+
+    <div class="slide">
+      <div class="slide-1 relative">
+        <img src="public/img/slide-1-1920x850.jpg" alt="">
+        <div class="absolute1">HARMONIOUS AND COZY</div>
+        <div class="absolute2">We develop individual room concepts for private and commercial use. Our team focuses on the interior design of private living room, hotel, offices and more.</div>
+        <button class="absolute">GET IN TOUCH</button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="slide-2 relative">
+        <img src="public/img/slide-2-1920x850.jpg" alt="">
+        <div class="absolute3">CREATE</div>
+        <div class="absolute4">COZINESS</div>
+        <button class="absolute5">GET IN TOUCH</button>
+      </div>
+      <div class="slide-3 relative">
+        <img src="public/img/slide-3-1920x850.jpg" alt="">
+        <div class="absolute1">COMFY AND STYLISH</div>
+        <div class="absolute2">Since our establish, our team has been creating comfortable and cozy spaces for our clients. We design people's everyday life and work through innovative ideas.</div>
+        <button class="absolute">GET IN TOUCH</button>
+
       </div>
     </div>
 
+    <section class="about d-flex">
+      <div class="about-img">
+        <img src="/public/img/about-2-570x449.jpg" width="700px" height="600px" alt="">
+      </div>
 
+      <div class="d-flex flex-column about1-2">
+        <div class="about1 p-5 mb-3 ml-3 mr-3">
+          <span><b>TASKS OF DESIGN</b></span>
+          <p>Interior design makes interior spaces functional, safe, and beautiful by determining and updating its vital elements.</p>
+        </div>
+        <div class="about2 p-5 ml-3 mr-3">
+          <span><b>PERSONALIZED INTERIORS</b></span>
+          <p>Our designers create interiors that reflect your personality, complement your mood, and improve your life.</p>
+        </div>
+      </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  </body>
+      <div class="about3 p-5">
+        <span><b>CREATIVE SOLUTIONS</b></span>
+        <p>We are all about creativity and it concerns everything we do to transform your house. Our approach includes:</p>
+        <p class="text-center">FOCUS ON OUR CLIENTS</p>
+        <p class="text-center">NON-TRIVIAL IDEAS</p>
+        <p class="text-center">FULL PROJECT SUPPORT</p><br><br>
+        <button class="text-center">GET IN TOUCH</button>
+      </div>
+    </section> <br> <br>
+
+    <section class="lasest-project">
+      <div class="d-flex justify-content-between">
+        <h1>LATEST PROJECTS</h1>
+        <div class="filter">
+          <button>ALL WORKS</button>
+          <button>HOME DESIGN</button>
+          <button>COMMERIAL DESIGN</button>
+        </div>
+      </div>
+      <hr> <br>
+
+      <div class="show-design">
+        <div class="d-flex">
+          <div class="left-side d-flex flex-column">
+            <div class="d-flex justify-content-between">
+              <div class="pic1"><img src="/public/img/fullwidth-masonry-gallery-7-420x330.jpg" alt=""></div>
+              <div class="pic2"><img src="/public/img/fullwidth-masonry-gallery-8-420x330.jpg" alt=""></div>
+            </div>
+
+            <div class="pic5"><img src="/public/img/fullwidth-masonry-gallery-10-870x330.jpg" alt=""></div>
+          </div>
+          
+          <div  class="right-side d-flex">
+            <div class="pic3"><img src="/public/img/fullwidth-masonry-gallery-9-420x690.jpg" alt=""></div>
+            <div class="d-flex flex-column justify-content-between">
+              <div class="pic4"><img src="/public/img/fullwidth-masonry-gallery-11-420x330.jpg" alt=""></div>
+              <div class="pic6"><img src="/public/img/fullwidth-masonry-gallery-6-420x330.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br><br>
+
+    <section class="achievement">
+      <div class="heading">FOLLOWING THE DREAM SINCE 1999</div>
+
+      <div class="row">
+        <div class="col-1"></div>
+
+        <div class="col-10">
+          <div class="d-flex">
+            <div class="awards text-center">
+              <div class="number"><b>12</b></div>
+              <div class="name">DESIGN AWARDS</div>
+            </div>
+            <div class="projects text-center">
+              <div class="number"><b>194</b></div>
+              <div class="name">SUCCESSFUL PROJECTS</div>
+            </div>
+            <div class="members text-center">
+              <div class="number"><b>25</b></div>
+              <div class="name">TEAM MEMBERS</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1"></div>
+      </div>
+    </section><br> <br>
+
+    <section class="designers">
+      <div class="heading">DIFFERENT PEOPLE — ONE MISSION</div>
+
+      <div class="slide2">
+        <div>
+          <img src="/public/img/team-6-370x366.jpg" alt="">
+          <div class="infor">
+            <div class="name-designer"><b>RYAN WILSON</b></div>
+            <div class="positions">FOUNDER, SENIOR DESIGNER</div>
+          </div>
+        </div>
+        <div>
+          <img src="/public/img/team-15-370x366.jpg" alt="">
+          <div class="infor">
+            <div class="name-designer"><b>RYAN WILSON</b></div>
+            <div class="positions">FOUNDER, SENIOR DESIGNER</div>
+          </div>
+        </div>
+        <div>
+          <img src="/public/img/team-16-370x366.jpg" alt="">
+          <div class="infor">
+            <div class="name-designer"><b>RYAN WILSON</b></div>
+            <div class="positions">FOUNDER, SENIOR DESIGNER</div>
+          </div>
+        </div>
+        <div>
+          <img src="/public/img/team-4-370x366.jpg" alt="">
+          <div class="infor">
+            <div class="name-designer"><b>RYAN WILSON</b></div>
+            <div class="positions">FOUNDER, SENIOR DESIGNER</div>
+          </div>
+        </div>
+        <div>
+          <img src="/public/img/team-5-370x366.jpg" alt="">
+          <div class="infor">
+            <div class="name-designer"><b>RYAN WILSON</b></div>
+            <div class="positions">FOUNDER, SENIOR DESIGNER</div>
+          </div>
+        </div>
+      </div>
+    </section><br> <br>
+
+    <section class="success">
+      <div class="heading">SECRETS OF OUR SUCCESS</div>
+
+      <div class="d-flex succ">
+        <div class="left">
+          <div class="d-flex">
+            <div class="d-flex flex-column">
+              <div class="num1">
+                <div class="title"><b>ITUITIVE AND EASY</b></div>
+                <div>Our team focuses on designing exciting interiors that are intuitively organized.</div>
+              </div>
+
+              <div class="num3">
+                <div class="title"><b>NON-TRIVIAL IDEAS</b></div>
+                <div>At Creator, we use the latest trends combined with innovations that give us great ideas.</div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column">
+              <div class="num2">
+                <div class="title"><b>FOCUS ON YOUR CLIENT</b></div>
+                <div>We create all our projects with client in mind and adhere to their preferences and needs.</div>
+              </div>
+
+              <div class="num4">
+                <div class="title"><b>FULL PROJECT SUPPORT</b></div>
+                <div>From the beginning to project completion, our team provides full support on all levels.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div><img src="/public/img/video-2-570x438.jpg" alt=""></div>
+        </div>
+      </div>
+    </section><br> <br>
+
+    <section class="clients">
+      <div class="heading">OUR CLIENTS</div><br>
+
+      <div class="list-client">
+        <div class="row">
+          <div class="col-3 text-center"><img src="/public/img/clients-1-270x145.png" alt=""></div>
+          <div class="col-3 text-center"><img src="/public/img/clients-2-270x145.png" alt=""></div>
+          <div class="col-3 text-center"><img src="/public/img/clients-3-270x145.png" alt=""></div>
+          <div class="col-3 text-center"><img src="/public/img/clients-4-270x145.png" alt=""></div>
+          <div class="col-3 text-center"><img src="/public/img/clients-5-270x145.png" alt=""></div>
+          <div class="col-3 text-center"><img src="/public/img/clients-6-270x145.png" alt=""></div>
+          <div class="col-3 text-center"><img src="/public/img/clients-7-270x145.png" alt=""></div>
+          <div class="col-3 text-center"><img src="/public/img/clients-8-270x145.png" alt=""></div>
+        </div>
+      </div>
+    </section><br><br>
+
+    <section class="blogs-post">
+      <div class="heading">LATEST BLOG POSTS</div><br>
+
+      <div class="latest-blog d-flex justify-content-around">
+        <div class="post24 relative">
+          <img src="/public/img/post-24-570x492.jpg" width="750px" alt="">
+          <div class="attachment text-center">
+            <div class="adress">Arched Book Shelves, Doorways, and Windows</div>
+            <div class="times">MAY 17, 2019</div>
+          </div>
+        </div>
+        <div class="post25 relative">
+          <img src="/public/img/post-25-570x492.jpg" width="750px" alt="">
+          <div class="attachment text-center">
+            <div class="adress">Arched Book Shelves, Doorways, and Windows</div>
+            <div class="times">MAY 17, 2019</div>
+          </div>
+        </div>
+      </div>
+    </section><br><br>
+
+    
+    <script type="module" src="/public/js/index.js"></script>
   </body>
 </html>

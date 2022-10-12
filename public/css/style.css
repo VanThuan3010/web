@@ -1,0 +1,398 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Teko:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.row-nav {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: -10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+}
+
+.col-1 {
+  width: 8.333333%;
+}
+
+.col-2 {
+  width: 16.666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333333%;
+}
+
+.col-5 {
+  width: 41.666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333333%;
+}
+
+.col-8 {
+  width: 66.666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.333333%;
+}
+
+.col-11 {
+  width: 91.666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+.d-flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.j-center {
+  justify-content: center;
+}
+
+.j-end {
+  justify-content: end;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu-link {
+  display: block;
+  padding: 8px 20px;
+  font-size: 25px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+ul li {
+  margin-right: 7px;
+}
+
+.features {
+  font-size: 25px;
+}
+
+.header {
+  background-color: white;
+  margin: 0 auto;
+  width: 1320px;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.slide .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  color: black;
+  border: none;
+}
+
+.slide .slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  color: black;
+  border: none;
+}
+.cart,
+.search,
+.user {
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ------------------------------------------ */
+.absolute1 {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  font-size: 60px;
+}
+.absolute2 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 900px;
+  font-size: 20px;
+}
+.absolute {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  opacity: 0.5;
+  color: black;
+  border: 5px solid black;
+}
+
+.absolute3 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  font-size: 80px;
+}
+.absolute4 {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  font-size: 80px;
+}
+.absolute5 {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  opacity: 0.5;
+  color: black;
+  border: 5px solid black;
+}
+
+.about-img,
+.about1-2,
+.about3 {
+  margin-top: 50px;
+}
+.about-img {
+  margin-left: 100px;
+}
+
+.about1,
+.about2,
+.about3 {
+  border: 4px solid black;
+}
+
+.about1-2,
+.about3 {
+  width: 440px;
+}
+
+.about1,
+.about2 {
+  height: 50%;
+}
+
+.about1 span,
+.about2 span,
+.about3 span {
+  font-size: 25px;
+}
+
+.about3 button {
+  width: 220px;
+  height: 70px;
+  font-size: 20px;
+  opacity: 0.5;
+  color: white;
+  background-color: black;
+}
+
+.about1 p,
+.about2 p,
+.about3 p {
+  font-size: 20px;
+}
+
+.lasest-project h1 {
+  margin-left: 100px;
+}
+
+.filter {
+  margin-right: 110px;
+}
+
+.filter button {
+  width: 200px;
+  height: 50px;
+  margin-left: 2px;
+  border: 3px black solid;
+}
+.show-design {
+  margin-left: 30px;
+}
+
+.left-side {
+  width: max-content;
+  padding: 10px;
+  height: max-content;
+  gap: 20px;
+}
+
+.right-side {
+  width: max-content;
+  padding: 10px;
+  height: max-content;
+  gap: 20px;
+}
+
+.heading {
+  font-size: 48px;
+  font-family: "Teko";
+  text-align: center;
+}
+
+.name {
+  font-family: "Teko", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  padding: 20px;
+  font-size: 48px;
+  line-height: 1.288888;
+}
+
+.number {
+  padding-top: 200px;
+  font-size: 60px;
+  line-height: 0.6;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  font-family: "Teko", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.awards,
+.projects,
+.members {
+  background-color: gray;
+  margin: 2px;
+  width: 500px;
+  height: 550px;
+}
+
+.slide2 {
+  margin-left: 100px;
+}
+
+.name-designer {
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.positions {
+  font-size: 17px;
+}
+
+.title {
+  font-size: 22px;
+}
+
+.num1,
+.num2,
+.num3,
+.num4 {
+  height: 50%;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.succ {
+  margin-left: 100px;
+}
+
+.list-client {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.latest-blog {
+  margin-left: 100px;
+  margin-right: 100px;
+  gap: 70px;
+}
+.times {
+  color: #b6af4a;
+}
+.attachment {
+  position: absolute;
+  width: 430px;
+  height: 230px;
+  padding-top: 30px;
+  font-size: 25px;
+  font-family: "Teko", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  top: 435px;
+  left: 120px;
+  background-color: white;
+}
