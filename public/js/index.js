@@ -24,25 +24,25 @@ $(".slide").slick({
 
 // Modal
 
-var modal = document.getElementById("myModal");
+// var modal = document.getElementById("myModal");
 
-var btn = document.getElementById("myBtn");
+// var btn = document.getElementById("myBtn");
 
-var span = document.getElementsByClassName("close")[0];
+// var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+// btn.onclick = function () {
+//   modal.style.display = "block";
+// };
 
-span.onclick = function () {
-  modal.style.display = "none";
-};
+// span.onclick = function () {
+//   modal.style.display = "none";
+// };
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// };
 
 // ////////////////////////////////////
 
@@ -54,6 +54,19 @@ $(".slide2").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+});
+
+$(".slide-blog").slick({
+  dots:true,
+  infinite: true,
+  speed: 500,
+  cssEase: "linear",
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  fade:true,
   autoplaySpeed: 2000,
   arrows: false,
 });
