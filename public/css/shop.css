@@ -1,0 +1,204 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Teko:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.row-nav {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: -10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+}
+
+.col-1 {
+  width: 8.333333%;
+}
+
+.col-2 {
+  width: 16.666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333333%;
+}
+
+.col-5 {
+  width: 41.666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333333%;
+}
+
+.col-8 {
+  width: 66.666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.333333%;
+}
+
+.col-11 {
+  width: 91.666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+.d-flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.j-center {
+  justify-content: center;
+}
+
+.j-end {
+  justify-content: end;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu-link {
+  display: block;
+  padding: 8px 20px;
+  font-size: 25px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+ul li {
+  margin-right: 7px;
+}
+
+.features {
+  font-size: 25px;
+}
+
+.header {
+  background-color: white;
+  margin: 0 auto;
+  width: 1320px;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+.cart,
+.search,
+.user {
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.user button {
+  background-color: white;
+  border: none;
+}
+
+.left-side {
+  margin-left: 50px;
+  width: 800px;
+}
+
+.search-pro input{
+    width: 300px;
+    height: 45px;
+    margin-left: 100px;
+    border-radius: 7px;
+}
+
+#sort-by {
+  margin-left: 1000px;
+  width: 250px;
+  height: 45px;
+  font-size: 20px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 360px;
+  top: 5px;
+  font-size: 20px;
+}
+
+.list-pro{
+    margin-left: 100px;
+    width: 1200px;
+    padding: 5px;
+}
+
+.title{
+    font-size: 25px;
+}
+
+.filter input{
+    width: 150px;
+}
+
+.filter{
+    width: 120px;
+    background-color: green;
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.check input{
+    height: 20px;
+    width: 20px;
+}
+
+.check{
+    font-size: 20px;
+}
+
+.pro-mini-name{
+    font-size: 18px;
+}
+
+.pro-mini-pri{
+    color: #50ba87;
+}
+.pro-mini img{
+    background-color: rgba(128, 128, 128, 0.062);
+}
+
+.name-pro{
+    font-size: 24px;
+}
+
+.price{
+    font-size: 18px;
+    color: #50ba87;
+}
