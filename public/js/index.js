@@ -1,10 +1,12 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import $ from "jquery";
+import "jquery/dist/jquery.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "animate.css/animate.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick.min.js";
-import "jquery/dist/jquery.min.js";
 import "../css/style.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
-
 //-----------------------------------------
 
 $(".slide").slick({
@@ -22,29 +24,6 @@ $(".slide").slick({
     "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-arrow-right' aria-hidden='true'></i></button>",
 });
 
-// Modal
-
-// var modal = document.getElementById("myModal");
-
-// var btn = document.getElementById("myBtn");
-
-// var span = document.getElementsByClassName("close")[0];
-
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// };
-
-// span.onclick = function () {
-//   modal.style.display = "none";
-// };
-
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
-
-// ////////////////////////////////////
 
 $(".slide2").slick({
   dots: false,
