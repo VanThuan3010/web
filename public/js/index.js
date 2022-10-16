@@ -70,3 +70,44 @@ $(".slide-blog").slick({
   autoplaySpeed: 2000,
   arrows: false,
 });
+$(".project-timeline-slide").slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  cssEase: "linear",
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+});
+
+$(".said-slide").slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  cssEase: "linear",
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  arrows: false,
+});
+
+$(".count").each(function () {
+  $(this)
+    .prop("Counter", 0)
+    .animate(
+      {
+        Counter: $(this).text(),
+      },
+      {
+        duration: 1000,
+        easing: "swing",
+        step: function (now) {
+          $(this).text(Math.ceil(now));
+        },
+      }
+    );
+});
+
