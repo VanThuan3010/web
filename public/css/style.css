@@ -1051,7 +1051,10 @@ nav .content .links {
 .secret-infor{
   font-size: 14px;
 }
-.num1:hover .secret-num{
+.num1:hover .secret-num,
+.num2:hover .secret-num,
+.num3:hover .secret-num,
+.num4:hover .secret-num{
   color: black;
 }
 @media screen and (min-width: 576px){
@@ -1166,7 +1169,8 @@ nav .content .links {
 .post25{
   margin-top: 150px;
 }
-.attachment:hover{
+.post24:hover .attachment,
+.post25:hover .attachment{
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.76), 0 3px 6px rgba(0, 0, 0, 0.76);
 }
 .post24 img, .post25 img{
