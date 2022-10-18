@@ -7,6 +7,7 @@ import "animate.css/animate.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick.min.js";
 import "../css/style.css";
+import "hover.css/css/hover.css"
 //-----------------------------------------
 
 $(".slide").slick({
@@ -35,6 +36,29 @@ $(".slide2").slick({
   autoplay: true,
   autoplaySpeed: 2000,
   arrows: false,
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
 $(".slide-blog").slick({
