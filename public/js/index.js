@@ -8,6 +8,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick.min.js";
 import "../css/style.css";
 import "hover.css/css/hover.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 //-----------------------------------------
 
 $(".slide").slick({
