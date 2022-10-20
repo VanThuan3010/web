@@ -444,6 +444,25 @@ nav .content .links {
 .background img{
   filter: brightness(70%);
 }
+
+/* respon background image */
+@media only screen and (min-width: 576px){
+  .name-page{
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 768px){
+  .name-page{
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 992px){
+  .name-page{
+    font-size: 35px;
+  }
+}
+/* end */
+
 /* tab */
 .tabs {
   display: flex;
@@ -696,7 +715,7 @@ svg circle:nth-child(2) {
 }
 
 .title2 {
-  font-size: 60px;
+  font-size: 25px;
   font-weight: 400;
 }
 
@@ -715,8 +734,8 @@ svg circle:nth-child(2) {
   color: rgba(21, 21, 21, 0.09);
   font-size: 35px;
 }
-.img-about1 img {
-  height: 50%;
+.project-timeline-slide .slick-slide{
+  padding: 10px;
 }
 
 /* responsive why-choose-us */
@@ -725,10 +744,19 @@ svg circle:nth-child(2) {
   padding: 25px;
   font-size: 16px;
 }
+.said-slide .quote-text{
+  font-size: 14px;
+}
 
 .btn .down-pre button {
   font-size: 16px;
   padding: 25px;
+}
+.project-name{
+  font-size: 18px;
+  }
+  .achievement .bg-achievement img{
+  max-height: 400px;
 }
 }
 @media screen and (min-width: 768px){
@@ -738,6 +766,36 @@ svg circle:nth-child(2) {
   .title1{
     font-size: 45px;
   }
+  .said-slide .quote-text{
+  font-size: 15px;
+}
+.achievement .achieve .count{
+  font-size: 45px;
+}
+.achievement .achieve p{
+  font-size: 16px;
+}
+}
+@media screen and (min-width: 992px){
+  .said-slide .quote-text{
+  font-size: 16px;
+}
+.tab-item {
+  font-size: 18px;
+}
+.tab-pane p{
+  font-size: 18px;
+}
+}
+
+@media screen and (min-width: 1200px){
+  .achievement .achieve .count{
+  font-size: 55px;
+}
+
+.achievement .achieve p{
+  font-size: 18px;
+}
 }
 
 /* end */
@@ -756,10 +814,7 @@ svg circle:nth-child(2) {
 }
 
 .quote-text{
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 20px;
-  width: 880px;
+  font-size: 13px;
   margin: 0 auto;
 }
 
@@ -775,38 +830,50 @@ svg circle:nth-child(2) {
   font-size: 18px;
 }
 
-.slick-slide{
-  width: 100%;
-}
 .achievement{
   position: relative;
 }
-.bg-achievement img{
+.achievement .bg-achievement img{
   filter: brightness(75%);
-  height: 300px;
+  height: 600px;
   width: 100%;
 }
 .achieve{
   width: 100%;
   position: absolute;
-  top: 30%;
-  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  z-index: 5;
+}
+.achievement .count{
+  font-size: 35px;
+  font-weight: 600;
 }
 
-.achievement h2{
-  font-size: 80px;
+.achievement p{
+  font-size: 14px;
   color: white;
 }
-.achievement p{
-  font-size: 20px;
-  color: white;
+
+
+.line1{
+  border-right: 1px solid white;
+  height: 80px;
 }
 
 .client-img{
-  border: 0.2px solid grey;
+  border: 0.2px solid rgba(128, 128, 128, 0.253);
 }
 .client-list .col-3{
   padding: 10px;
+}
+.img-about{
+  width: 100%;
+}
+.content-about{
+  width: 100%;
 }
 
 /* footer */
