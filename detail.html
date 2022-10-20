@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/public/img/logo.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -26,6 +27,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/public/css/detail.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -279,56 +288,51 @@
     </section>
     <br /><br />
 
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col-10">
-        <div class="row">
-          <div class="col-6 text-center">
-            <div class="pro-thumnail d-flex flex-column">
-              <div class="pic-pro">
+    <section>
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row gap-5">
+          <div class="pro-thumnail d-flex flex-column flex-md-row flex-lg-column">
+            <div class="pic-pro">
+              <img src="/public/img/detail product/product-10-530x480.png" alt="" />
+            </div>
+            <div class="mini-pic d-flex justify-content-between flex-md-column flex-lg-row gap-3">
+              <div class="mini-pro">
                 <img
-                  src="/public/img/detail product/product-10-530x480.png"
+                  src="/public/img/detail product/product-mini-4-169x152.png"
                   alt=""
                 />
               </div>
-              <div class="mini-pic d-flex justify-content-between">
-                <div class="mini-pro">
-                  <img
-                    src="/public/img/detail product/product-mini-4-169x152.png"
-                    alt=""
-                  />
-                </div>
-                <div class="mini-pro">
-                  <img
-                    src="/public/img/detail product/product-mini-5-169x152.png"
-                    alt=""
-                  />
-                </div>
-                <div class="mini-pro">
-                  <img
-                    src="/public/img/detail product/product-mini-6-169x152.png"
-                    alt=""
-                  />
-                </div>
+              <div class="mini-pro">
+                <img
+                  src="/public/img/detail product/product-mini-5-169x152.png"
+                  alt=""
+                />
+              </div>
+              <div class="mini-pro">
+                <img
+                  src="/public/img/detail product/product-mini-6-169x152.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
-
-          <div class="col-1"></div>
-          <div class="col-5">
+          
+          <div class="d-flex flex-column">
             <div class="name-pro">CB2 CHAMBER DESK</div>
-            <div class="price">$520 . 00</div>
-            <div class="rate">
-              <i class="bi bi-star"> </i><i class="bi bi-star"> </i
-              ><i class="bi bi-star"> </i><i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
+            <div class="d-flex align-items-center gap-3">
+              <div class="price">$520.00</div>
+              <div class="rate">
+                <i class="bi bi-star"> </i><i class="bi bi-star"> </i
+                ><i class="bi bi-star"> </i><i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div>
             </div>
             <br />
             <div class="descrip">
-              Designed by an award-winning designer Manuel Saez, this
-              immaculately clean white desktop is the sign of a highly
-              organized, compulsive neatnik. It has space for all your supplies
-              - folders, books, planners, and more!
+              Designed by an award-winning designer Manuel Saez, this immaculately
+              clean white desktop is the sign of a highly organized, compulsive
+              neatnik. It has space for all your supplies - folders, books, planners,
+              and more!
             </div>
             <hr />
             <div class="more-infor">
@@ -342,25 +346,20 @@
               <span class="value">60 x 60 x 90 cm</span>
             </div>
             <br />
-            <div class="stepper">
-              <input
-                class="form-input stepper-input"
-                type="number"
-                data-zeros="true"
-                value="1"
-                min="1"
-                max="1000"
-              />
-              <span class="stepper-arrow up"></span>
-              <span class="stepper-arrow down"></span>
+            <div class="d-flex justify-content-center gap-3 justify-content-lg-start">
+              <div
+                class="enter-number d-flex align-items-center justify-content-center"
+              >
+                <div class="minus bi-dash d-flex align-items-center"></div>
+                <input class="form-input" type="number" data-zeros="true" value="1" />
+                <div class="plus bi-plus d-flex align-items-center"></div>
+              </div>
+              <button class="add">ADD TO CART</button>
             </div>
             <br />
-
-            <button class="add">ADD TO CART</button> <br />
             <hr />
             <br />
-
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-center align-items-center gap-4">
               <div class="share">SHARE</div>
               <div class="share-icon">
                 <i class="bi bi-facebook"></i> <i class="bi bi-twitter"></i>
@@ -370,129 +369,139 @@
           </div>
         </div>
       </div>
-      <div class="col-1"></div>
-    </div>
+    </section>
     <br /><br />
 
-    <div>
-      <div class="tabs">
-        <div class="tab-item active">TESTIMONIAL</div>
-        <div class="tab-item">ADDITIONAL INFORMATION</div>
-        <div class="tab-item">DELIVERY AND PAYMENT</div>
-        <div class="line"></div>
-      </div>
-
-      <div class="tab-content">
-        <div class="tab-pane active">
-          <div class="d-flex">
-            <div class="avt">
-              <img src="/public/img/user-1-119x119.jpg" alt="" />
-            </div>
-            <div class="ml-5 d-flex flex-column justify-content-center">
-              <div class="d-flex justify-content-between">
-                <div class="user-name"><b>John Doe</b></div>
-                <div class="rate">
-                  <i class="bi bi-star"> </i><i class="bi bi-star"> </i
-                  ><i class="bi bi-star"> </i><i class="bi bi-star"></i>
-                  <i class="bi bi-star"></i>
+      <section>
+        <div class="container">
+          <div class="tabs">
+            <div class="tab-item active">TESTIMONIAL</div>
+            <div class="tab-item">ADDITIONAL INFORMATION</div>
+            <div class="tab-item">DELIVERY AND PAYMENT</div>
+            <div class="line"></div>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active">
+              <div class="d-flex flex-column gap-4 flex-lg-row">
+                <div class="avt">
+                  <img src="/public/img/user-1-119x119.jpg" alt="" />
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                  <div class="d-flex justify-content-between">
+                    <div class="user-name"><b>John Doe</b></div>
+                    <div class="rate">
+                      <i class="bi bi-star"> </i><i class="bi bi-star"> </i
+                      ><i class="bi bi-star"> </i><i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </div>
+                  <div class="cmt">
+                    The product you delivered me has surpassed all my expectations.
+                    The item is one of the best, all-purpose items ever crafted. I
+                    love everything about my purchase. Reliable, secure, quirky,
+                    easy to clean in and out.
+                  </div>
                 </div>
               </div>
-              <div class="cmt">
-                The product you delivered me has surpassed all my expectations.
-                The item is one of the best, all-purpose items ever crafted. I
-                love everything about my purchase. Reliable, secure, quirky,
-                easy to clean in and out.
+              <br />
+              <hr />
+              <br />
+              <div class="leave-cmt text-center"><b>ADD YOUR COMMENT</b></div>
+              <br />
+              <div class="d-flex flex-column gap-3 flex-sm-row">
+                <div class="input-name">
+                  <input type="text" placeholder=" Your Name" />
+                </div>
+                <div class="input-email">
+                  <input type="text" placeholder=" Your E-mail" />
+                </div>
+              </div>
+              <br />
+              <div class="message">
+                <textarea rows="" cols="" placeholder=" Message"></textarea>
               </div>
             </div>
-          </div>
-
-          <br />
-          <hr />
-          <br />
-          <div class="leave-cmt">ADD YOUR COMMENT</div>
-          <br />
-          <div class="d-flex">
-            <div class="input-name">
-              <input type="text" placeholder="Your Name" />
+            <div class="tab-pane">
+              <p>
+                Here you will find more useful information about the chosen product.
+                It’s always good to have the choice we can offer. We try to cater to
+                the needs of each and every whimsical buyer. This product is
+                qualitative and affordable at the same time. Take advantage of this
+                product’s benefits and you'll see that this is exactly the product
+                you need. Besides you can save your money on account of the lowest
+                prices.
+              </p>
             </div>
-            <div class="input-email">
-              <input type="text" placeholder="Your E-mail" />
+            <div class="tab-pane">
+              <p>
+                Here you can read some details about a nifty little lifecycle of
+                your order's journey from the time you place your order to your new
+                treasures arriving at your doorstep. At first you choose the product
+                you like. Then you put into your shopping cart and pass the checkout
+                process in a few clicks. Our store offers several payment and
+                delivery methods, so you have an opportunity to choose which one is
+                the most convenient for you.
+              </p>
             </div>
           </div>
-          <br />
-          <div class="message">
-            <input type="text" name="" id="" />
-          </div>
         </div>
-        <div class="tab-pane">
-          <p>
-            Here you will find more useful information about the chosen product.
-            It’s always good to have the choice we can offer. We try to cater to
-            the needs of each and every whimsical buyer. This product is
-            qualitative and affordable at the same time. Take advantage of this
-            product’s benefits and you'll see that this is exactly the product
-            you need. Besides you can save your money on account of the lowest
-            prices.
-          </p>
-        </div>
-        <div class="tab-pane">
-          <p>
-            Here you can read some details about a nifty little lifecycle of
-            your order's journey from the time you place your order to your new
-            treasures arriving at your doorstep. At first you choose the product
-            you like. Then you put into your shopping cart and pass the checkout
-            process in a few clicks. Our store offers several payment and
-            delivery methods, so you have an opportunity to choose which one is
-            the most convenient for you.
-          </p>
-        </div>
-      </div>
+      </section>
       <br />
       <br />
 
       <section class="relative-pro">
-        <div class="rel text-center">RELATED PRODUCTS</div>
-        <br /><br />
+        <div class="container">
+          <div class="rel text-center">RELATED PRODUCTS</div>
+          <br /><br />
+          <div class="d-flex flex-column flex-lg-row">
+            <div class="d-flex flex-column flex-sm-row">
+              <div class="rel-pro d-flex flex-column gap-3 justify-content-center align-items-center">
+                <div class="text-center">
+                  <img src="/public/img/product-4-270x280.png" alt="" />
+                </div>
+                <div class="d-flex flex-column gap-3 align-items-center">
+                  <div class="name-pro">CB2 CHAMBER DESK</div>
+                  <div class="price">$ 520.00</div>
+                </div>
+              </div>
+              <div class="rel-pro d-flex flex-column gap-3 justify-content-center align-items-center">
+                <div class="text-center">
+                  <img src="/public/img/product-5-270x280.png" alt="" />
+                </div>
+                <div class="d-flex flex-column gap-3 align-items-center">
+                  <div class="name-pro">CB2 CHAMBER DESK</div>
+                  <div class="price">$ 520.00</div>
+                </div>
+              </div>
+            </div>
 
-        <div class="row">
-          <div class="col-1"></div>
-          <div class="col-10">
-            <div class="row">
-              <div class="col-3 text-center">
-                <img src="/public/img/product-4-270x280.png" alt="" />
+            <div class="d-flex flex-column flex-sm-row">
+              <div class="rel-pro d-flex flex-column gap-3 justify-content-center align-items-center">
+                <div class="text-center">
+                  <img src="/public/img/product-6-270x280.png" alt="" />
+                </div>
+                <div class="d-flex flex-column gap-3 align-items-center">
+                  <div class="name-pro">CB2 CHAMBER DESK</div>
+                  <div class="price">$ 520.00</div>
+                </div>
               </div>
-              <div class="col-3 text-center">
-                <img src="/public/img/product-5-270x280.png" alt="" />
-              </div>
-              <div class="col-3 text-center">
-                <img src="/public/img/product-6-270x280.png" alt="" />
-              </div>
-              <div class="col-3 text-center">
-                <img src="/public/img/product-7-270x280.png" alt="" />
-              </div>
-              <div class="col-3 text-center">
-                <div class="name-pro">CB2 CHAMBER DESK</div>
-                <div class="price">$ 520.00</div>
-              </div>
-              <div class="col-3 text-center">
-                <div class="name-pro">CB2 CHAMBER DESK</div>
-                <div class="price">$ 520.00</div>
-              </div>
-              <div class="col-3 text-center">
-                <div class="name-pro">CB2 CHAMBER DESK</div>
-                <div class="price">$ 520.00</div>
-              </div>
-              <div class="col-3 text-center">
-                <div class="name-pro">CB2 CHAMBER DESK</div>
-                <div class="price">$ 520.00</div>
+              <div class="rel-pro d-flex flex-column gap-3 justify-content-center align-items-center">
+                <div class="text-center">
+                  <img src="/public/img/product-7-270x280.png" alt="" />
+                </div>
+                <div class="d-flex flex-column gap-3 align-items-center">
+                  <div class="name-pro">CB2 CHAMBER DESK</div>
+                  <div class="price">$ 520.00</div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-1"></div>
         </div>
       </section>
-    </div>
     <script type="module" src="/public/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <script>
       const $ = document.querySelector.bind(document);
       const $$ = document.querySelectorAll.bind(document);
