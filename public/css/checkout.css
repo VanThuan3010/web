@@ -654,16 +654,18 @@ input{
   margin: 0 auto;  
 }
 thead tr th {
-  font-size: 24px;
+  font-size: 18px;
   border: 2px solid black;
   text-align: center;
 }
 
 tbody tr td {
-  font-size: 30px;
+  font-size: 20px;
   height: 70px;
 }
-
+a{
+  color: black;
+}
 tbody tr {
   border: 0.5px solid grey;
 }

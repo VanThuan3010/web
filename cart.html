@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/public/css/cart.css" />
-    <title>Document</title>
+    <title>Cart</title>
   </head>
   <body>
     <div class="wrapper">
@@ -43,7 +43,7 @@
             <li><a href="aboutus.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="shop.html">Shop</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="cart.html">Contact</a></li>
             <li>
               <a href="cart.html"><i class="bi bi-cart3"></i></a>
             </li>
@@ -314,6 +314,8 @@
                   type="number"
                   data-zeros="true"
                   value="1"
+                  min="1"
+                  readonly = ""
                 />
                 <div class="plus bi-plus d-flex align-items-center"></div>
               </div>
@@ -343,6 +345,8 @@
                   type="number"
                   data-zeros="true"
                   value="1"
+                  min="1"
+                  readonly = ""
                 />
                 <div class="plus bi-plus d-flex align-items-center"></div>
               </div>
@@ -452,5 +456,20 @@
     <script src="/public/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+      $(".plus").on("click", (event) => {
+        const input = $(event.target.closest(".enter-number")).find(
+          "input.form-input"
+        );
+        input.val(Number(input.val()) + 1);
+      });
+
+      $(".minus").on("click", (event) => {
+        const input = $(event.target.closest(".enter-number")).find(
+          "input.form-input"
+        );
+        if (Number(input.val()) > 1) input.val(Number(input.val()) - 1);
+      });
+    </script>
   </body>
 </html>

@@ -63,18 +63,7 @@ $(".slide2").slick({
   ],
 });
 
-$(".slide-blog").slick({
-  dots:true,
-  infinite: true,
-  speed: 500,
-  cssEase: "linear",
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  fade:true,
-  autoplaySpeed: 2000,
-  arrows: false,
-});
+
 $(".project-timeline-slide").slick({
   dots: false,
   infinite: true,

@@ -1,7 +1,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Teko:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700");
+
 * {
-  font-family: "Poppins";
+  font-family: "teko";
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -592,8 +594,9 @@ a {
 .leave-email {
   gap: 10px;
 }
+
 .site-footer{
-  margin-top: 100px;
+    margin-top: 100px;
 }
 
 /* end footer */
@@ -627,37 +630,59 @@ a {
 
 /* end */
 
-.title-blog{
-  font-size: 20px;
-  font-weight: 1000;
+.infor-contact{
+    margin-top: 100px;
 }
-.tag{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90px;
-  background-color: #976f55;
-  font-weight: 600;
-  height: 30px;
-  color: white;
+
+.title{
+    font-size: 28px;
+    font-weight: 600;
 }
-.tag:hover{
-  background-color: #efc4a3;
-  transition: all 0.8s;
+.ask{
+    font-size: 24px;
 }
-.cmt, .time-post{
-  font-size: 16px;
+.address-contact i, .email-contact i, .call-contact i{
+    font-size: 50px;
+    color: #53d391;
 }
-.page button{
-  padding: 12px 22px;
-  border-radius: 50%;
-  border: none;
-  background-color: #70807e42;
+
+.bot-content{
+    color: gray;
+}
+.bot-content,
+.top-content{
+    font-size: 20px;
+}
+.location, .contact{
+    width: 100%;
+}
+input{
+    height: 50px;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+}
+input, textarea{
+    border: none;
+    background: rgba(128, 128, 128, 0.151);
+}
+.send-mess{
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+    border: none;
+    background-color: #53d391;
+    color: white;
+}
+.send-mess:hover{
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    transition: all 1s;
 }
 @media screen and (min-width: 768px){
-.title-blog{
-  font-size: 24px;
-  letter-spacing: 1px;
-  line-height: 20px;
-}
+    input{
+        width: 32%;
+    }
 }
