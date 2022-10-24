@@ -635,7 +635,7 @@ a {
 }
 thead tr th {
   font-size: 20px;
-  border: 2px solid black;
+  border-top: 2px solid black;
   text-align: center;
 }
 

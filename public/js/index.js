@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import $ from "jquery";
+import $, { event } from "jquery";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "animate.css/animate.min.css";
@@ -10,8 +10,12 @@ import "../css/style.css";
 import "hover.css/css/hover.css"
 import AOS from "aos";
 import "aos/dist/aos.css";
+import _ from "lodash";
+import {products} from "./product";
+
 //-----------------------------------------
 
+// -----------------------------------------------
 $(".slide").slick({
   dots: false,
   infinite: true,
@@ -150,6 +154,34 @@ $(".count").each(function () {
       }
     );
 });
+// add to cart
+const addToCart = (event)=>{
+  event.preventDefault();
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const item = _.find(cart,{product: event.data.id});
+  if (item) {
+    item.quantity += 1;
+  } else cart.push({
+    product: event.data.id,
+    quantity: 1,
+  });
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+// render product
+$(function () {
+  const productTemplate = $("#productTemplate").html();
+  const product = _.template(productTemplate);
+  console.log(products);
 
+  $(".list-pro").append(
+    _.map(products, (p) => {
+      const dom = $(product(p));
+
+      dom.find(".btn-add-to-cart").on("click", p, addToCart);
+
+      return dom;
+    })
+  );
+});
 
 

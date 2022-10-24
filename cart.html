@@ -293,69 +293,32 @@
             <th>Delete</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>
-              <a href=""
-                ><img
-                  src="/public/img/detail product/product-mini-7-146x132.png"
-                  alt=""
-              /></a>
-              <a href="">CB2 Coup Grey Office Chair</a>
-            </td>
-            <td class="text-center">$550</td>
-            <td class="text-center">
-              <div
-                class="enter-number d-flex align-items-center justify-content-center"
-              >
-                <div class="minus bi-dash d-flex align-items-center"></div>
-                <input
-                  class="form-input"
-                  type="number"
-                  data-zeros="true"
-                  value="1"
-                  min="1"
-                  readonly = ""
-                />
-                <div class="plus bi-plus d-flex align-items-center"></div>
-              </div>
-            </td>
-            <td class="text-center">$550</td>
-            <td class="text-center">
-              <button><i class="bi-trash"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href=""
-                ><img
-                  src="/public/img/detail product/product-mini-8-146x132.png"
-                  alt=""
-              /></a>
-              <a href="">IKEA TERTIAL WORK LAMP</a>
-            </td>
-            <td class="text-center">$250</td>
-            <td class="text-center">
-              <div
-                class="enter-number d-flex align-items-center justify-content-center"
-              >
-                <div class="minus bi-dash d-flex align-items-center"></div>
-                <input
-                  class="form-input"
-                  type="number"
-                  data-zeros="true"
-                  value="1"
-                  min="1"
-                  readonly = ""
-                />
-                <div class="plus bi-plus d-flex align-items-center"></div>
-              </div>
-            </td>
-            <td class="text-center">$250</td>
-            <td class="text-center">
-              <button><i class="bi-trash"></i></button>
-            </td>
-          </tr>
+        <tbody class="cart-list">
+          <template id="item">
+            <tr class="item">
+              <td><img style="width: 20%;" src="${product.thumbnail}" alt="bj" />${product.name}</td>
+              <td class="text-center" style="vertical-align:middle">$${product.price}</td>
+              <td class="text-center" style="vertical-align:middle">
+                <div
+                  class="enter-number d-flex align-items-center justify-content-center"
+                >
+                  <div class="minus bi-dash d-flex align-items-center"></div>
+                  <input
+                    class="form-input"
+                    type="number"
+                    data-zeros="true"
+                    value="${quantity}"
+                    readonly=""
+                  />
+                  <div class="plus bi-plus d-flex align-items-center"></div>
+                </div>
+              </td>
+              <td class="text-center" style="vertical-align:middle">$550</td>
+              <td class="text-center" style="vertical-align:middle">
+                <button class="btn"><i class="bi-trash"></i></button>
+              </td>
+            </tr>
+          </template>
         </tbody>
       </table>
     </div>
@@ -453,23 +416,25 @@
         </div>
       </div>
     </footer>
-    <script src="/public/js/index.js"></script>
+    <script type="module" src="/public/js/index.js"></script>
+    <script type="module" src="/public/js/cart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script>
-      $(".plus").on("click", (event) => {
-        const input = $(event.target.closest(".enter-number")).find(
-          "input.form-input"
-        );
-        input.val(Number(input.val()) + 1);
-      });
+      // $(".plus").on("click", (event) => {
+      //   const input = $(event.target.closest(".enter-number")).find(
+      //     "input.form-input"
+      //   );
+      //   console.log(input.val());
+      //   // input.val(Number(input.val()) + 1);
+      // });
 
-      $(".minus").on("click", (event) => {
-        const input = $(event.target.closest(".enter-number")).find(
-          "input.form-input"
-        );
-        if (Number(input.val()) > 1) input.val(Number(input.val()) - 1);
-      });
+      // $(".minus").on("click", (event) => {
+      //   const input = $(event.target.closest(".enter-number")).find(
+      //     "input.form-input"
+      //   );
+      //   if (Number(input.val()) > 1) input.val(Number(input.val()) - 1);
+      // });
     </script>
   </body>
 </html>
