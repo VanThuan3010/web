@@ -164,14 +164,18 @@ const addToCart = (event)=>{
   } else cart.push({
     product: event.data.id,
     quantity: 1,
+    price: event.data.price,
+    total: 1,
   });
+  for (let i = 0; i < cart.length; i++) {
+    cart[i].total = cart[i].price * cart[i].quantity;
+  }
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 // render product
 $(function () {
   const productTemplate = $("#productTemplate").html();
   const product = _.template(productTemplate);
-  console.log(products);
 
   $(".list-pro").append(
     _.map(products, (p) => {

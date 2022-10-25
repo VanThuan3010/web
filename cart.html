@@ -313,7 +313,7 @@
                   <div class="plus bi-plus d-flex align-items-center"></div>
                 </div>
               </td>
-              <td class="text-center" style="vertical-align:middle">$550</td>
+              <td class="text-center" style="vertical-align:middle">$<span class="total">${total}</span></td>
               <td class="text-center" style="vertical-align:middle">
                 <button class="btn"><i class="bi-trash"></i></button>
               </td>
@@ -331,14 +331,14 @@
             class="input-voucher d-flex flex-column flex-sm-row justify-content-center align-items-center"
           >
             <div class="input-coupon">
-              <input type="text" placeholder="Coupon Code" />
+              <input class="btn-input-coupon" type="text" placeholder="Coupon Code" />
             </div>
             <div class="apply-coupon"><button>APPLY COUPON</button></div>
           </div>
           <div
             class="pay d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3"
           >
-            <div class="total">Total $800</div>
+            <div class="total-all"><b>Total</b> $<span class="total-all-value"></span></div>
             <div class="checkout">
               <a href="checkout.html"><button>PROCESS TO CHECKOUT</button></a>
             </div>
@@ -420,21 +420,5 @@
     <script type="module" src="/public/js/cart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script>
-      // $(".plus").on("click", (event) => {
-      //   const input = $(event.target.closest(".enter-number")).find(
-      //     "input.form-input"
-      //   );
-      //   console.log(input.val());
-      //   // input.val(Number(input.val()) + 1);
-      // });
-
-      // $(".minus").on("click", (event) => {
-      //   const input = $(event.target.closest(".enter-number")).find(
-      //     "input.form-input"
-      //   );
-      //   if (Number(input.val()) > 1) input.val(Number(input.val()) - 1);
-      // });
-    </script>
   </body>
 </html>

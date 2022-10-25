@@ -13,19 +13,25 @@ const deleteItem = (event) => {
 };
 const increment = (event) => {
   const product = _.find(cart, { product: event.data.product.id });
-  product.quantity +=1;
+  product.quantity += 1;
   const item = $(event.target.closest(".item"));
   item.find(".form-input").val(product.quantity);
+  product.total = product.quantity * product.price;
+  item.find(".total").text(product.total);
   localStorage.setItem("cart", JSON.stringify(cart));
+  total();
 };
 
 const decrement = (event) => {
   const product = _.find(cart, { product: event.data.product.id });
-  if(product.quantity === 1) return;
+  if (product.quantity === 1) return;
   else product.quantity -= 1;
   const item = $(event.target.closest(".item"));
   item.find(".form-input").val(product.quantity);
+  product.total = product.quantity * product.price;
+  item.find(".total").text(product.total);
   localStorage.setItem("cart", JSON.stringify(cart));
+  total();
 };
 // show on cart
 $(function () {
@@ -48,4 +54,30 @@ $(function () {
       return dom;
     })
   );
+  total();
+  
+});
+
+const total = () => {
+  let sum = 0;
+  for (let i = 0; i < cart.length; i++) {
+    sum += Number(cart[i].total);
+  }
+  $(".total-all-value").text(sum);
+};
+
+$(".apply-coupon").on("click", function () {
+  let codeName = $(".btn-input-coupon").val().toString().toLowerCase();
+  let total = $(".total-all-value").text();
+  Number(total);
+  let code = [
+    { id: 1, name: "techmaster", value: 5 },
+    { id: 2, name: "mrtrung", value: 10 },
+    { id: 3, name: "tfruit", value: 15 },
+  ];
+  for (let i = 0; i < code.length; i++){
+    if (codeName == code[i].name)
+      total -= total * (code[i].value) / 100;
+  }
+  $(".total-all-value").text(total);
 });
