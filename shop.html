@@ -284,15 +284,15 @@
           </div>
           <div class="">
             <select id="sort-by">
-              <option value="sort-by-new">Sort by new</option>
-              <option value="sort-by-pop">Sort by popular</option>
-              <option value="sort-by-rate">Sort by rating</option>
+              <option class="text-center" value="default">Default</option>
+              <option class="text-center" value="sort-by-ascending">Sort by ascending</option>
+              <option class="text-center" value="sort-by-decreasing">Sort by decreasing</option>
             </select>
           </div>
         </div> <br>
 
         <div class="d-flex flex-column flex-lg-row gap-3">
-          <div class="d-flex flex-column">
+          <div class="all-list d-flex flex-column">
             <div class="list-pro d-flex flex-column justify-content-center align-items-center flex-sm-row flex-wrap gap-2">
               
             </div>
@@ -306,33 +306,23 @@
           <div class="filter-pro">
             <div class="title"><b>POPULAR CATEGORIES</b></div>
             <br />
-            <div class="check">
-              <input type="checkbox" name="" id="" />&nbsp;&nbsp;&nbsp; Chairs
-            </div><br>
-            <div class="line1"></div><br>
-            <div class="check">
-              <input type="checkbox" name="" id="" />&nbsp;&nbsp;&nbsp; Desks
-            </div><br>
-            <div class="line1"></div><br>
-            <div class="check">
-              <input type="checkbox" name="" id="" />&nbsp;&nbsp;&nbsp; Lighting
-            </div><br>
-            <div class="line1"></div><br>
-            <div class="check">
-              <input type="checkbox" name="" id="" />&nbsp;&nbsp;&nbsp; Decor
-            </div>
+            <form action="" class="by-category">
+              <div class="categories-filter">
+                
+              </div>
+            </form>
             <br /><br />
             <div class="title"><b>FILTER BY PRICE</b></div>
             <br />
             <div class="filter d-flex gap-3">
-              <input type="number" placeholder="Min" />
-              <input type="number" placeholder="Max" />
+              <input type="number" placeholder=" Min" class="min-price"/>
+              <input type="number" placeholder=" Max" class="max-price"/>
             </div>
             <br />
             <button class="filter-btn">Filter</button><br /><br />
             <div class="title"><b>POPULAR PRODUCTS</b></div>
             <br />
-            <a href="detail.html">
+            <a href="">
               <div class="pro-mini d-flex gap-3">
                 <img src="/public/img/product-mini-1-108x100.png" alt="" />
                 <div class="d-flex flex-column justify-content-center">
@@ -342,7 +332,7 @@
               </div>
             </a><br>
             <div class="line1"></div><br>
-            <a href="detail.html">
+            <a href="">
               <div class="pro-mini d-flex gap-3">
                 <img src="/public/img/product-mini-2-108x100.png" alt="" />
                 <div class="d-flex flex-column justify-content-center">
@@ -352,7 +342,7 @@
               </div>
             </a><br>
             <div class="line1"></div><br>
-            <a href="detail.html">
+            <a href="">
               <div class="pro-mini d-flex gap-3">
                 <img src="/public/img/product-mini-3-108x100.png" alt="" />
                 <div class="d-flex flex-column justify-content-center">
@@ -437,6 +427,7 @@
     </footer>
 
     <script type="module" src="/public/js/index.js"></script>
+    <script type="module" src="/public/js/shop.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script type="text/html" id="productTemplate">
@@ -450,6 +441,12 @@
         </div>
         <div class="price">$${price}</div>
       </div>
+    </script>
+    <script type="text/html" id="categoryTemplate">
+      <div class="check">
+        <input type="checkbox" name="category" value="${category}"/>&nbsp;&nbsp;&nbsp; ${category}
+      </div><br>
+      <div class="line1"></div><br>
     </script>
   </body>
 </html>
