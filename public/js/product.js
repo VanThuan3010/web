@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     name: "CB2 CHAMBER DESK",
-    thumbnail: "/public/img/product-1-270x280.png",
+    thumbnail: "/img/product-1-270x280.png",
     price: 520,
   },
   {
