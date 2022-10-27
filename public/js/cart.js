@@ -1,6 +1,8 @@
 import $ from "jquery";
 import _ from "lodash";
 import { products } from "./product";
+import "toastr/build/toastr.min.css";
+import toastr from "toastr";
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 // delete item
@@ -9,7 +11,9 @@ const deleteItem = (event) => {
     cart = _.filter(cart, (item) => item.product !== event.data.product.id);
     localStorage.setItem("cart", JSON.stringify(cart));
     event.target.closest(".item").remove();
+    total();
   }
+  
 };
 const increment = (event) => {
   const product = _.find(cart, { product: event.data.product.id });
@@ -64,6 +68,8 @@ const total = () => {
     sum += Number(cart[i].total);
   }
   $(".total-all-value").text(sum);
+  $(".fee-cart-sub").text(sum);
+  $(".fee-total").text(sum);
 };
 
 $(".apply-coupon").on("click", function () {
@@ -79,5 +85,6 @@ $(".apply-coupon").on("click", function () {
     if (codeName == code[i].name)
       total -= total * (code[i].value) / 100;
   }
+  let fee = total();
   $(".total-all-value").text(total);
 });

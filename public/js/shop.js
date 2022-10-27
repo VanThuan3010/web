@@ -1,6 +1,8 @@
 import $ from "jquery";
 import _ from "lodash";
 import { products } from "./product";
+import "toastr/build/toastr.min.css";
+import toastr from "toastr";
 
 const filter = () => {
   const categories = [];
@@ -122,6 +124,7 @@ const addToCart = (event) => {
     cart[i].total = cart[i].price * cart[i].quantity;
   }
   localStorage.setItem("cart", JSON.stringify(cart));
+  toastr["success"]("This product added to cart");
 };
 // render product
 $(() => {

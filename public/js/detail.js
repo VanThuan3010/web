@@ -1,6 +1,8 @@
 import $ from "jquery";
 import _ from "lodash";
 import { products } from "./product";
+import "toastr/build/toastr.min.css";
+import toastr from "toastr";
 
 // add to cart
 const addToCart = (event) => {
@@ -22,7 +24,10 @@ const addToCart = (event) => {
     cart[i].total = cart[i].price * cart[i].quantity;
   }
   localStorage.setItem("cart", JSON.stringify(cart));
+  toastr["success"]("This product added to cart");
 };
+
+
 const increment = (event) => {
   let input = $(".enter-number").find("input.form-input").val();
   input = Number(input);

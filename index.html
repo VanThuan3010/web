@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/all.css">
     <title>Home</title>
   </head>
   <body>
@@ -29,7 +30,7 @@
             <a href="index.html"><img src="/public/img/logo.png" alt="" /></a>
           </div>
           <ul class="links">
-            <li><a href="index.html">Home</a></li>
+            <li><a class="this-page" href="index.html">Home</a></li>
             <li><a href="aboutus.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="shop.html">Shop</a></li>
@@ -48,14 +49,14 @@
           ><i class="bi bi-search"></i
         ></label>
         <form action="#" class="search-box">
-          <input
-            type="text"
-            placeholder="Type Something to Search..."
-            required
-          />
-          <button type="submit" class="go-icon">
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </button>
+            <input
+              type="text"
+              placeholder="Type Something to Search..."
+              required
+            />
+            <button type="submit" class="go-icon">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
         </form>
       </nav>
     </div>
@@ -266,7 +267,7 @@
       <div class="slide-1 position-relative">
         <img src="public/img/slide-1-1920x850.jpg" alt="" />
         <div class="infor-slide position-absolute">
-          <p class="caption">HARMONIOUS AND COZY</p>
+          <p class="caption">Harmonious Aand Cozy</p>
           <p class="cap-more">
             We develop individual room concepts for private and commercial use.
             Our team focuses on the interior design of private living room,
@@ -308,7 +309,7 @@
     <section class="about">
       <div class="container">
         <div class="all-about">
-          <div class="about-img">
+          <div data-aos="fade-left" class="about-img">
             <img
               src="/public/img/about-2-570x449.jpg"
               width="700px"
@@ -317,7 +318,7 @@
             />
           </div>
           <div class="about123">
-            <div class="about12">
+            <div data-aos="fade-down" class="about12">
               <div class="about1">
                 <span><b>TASKS OF DESIGN</b></span>
                 <p>
@@ -333,7 +334,7 @@
                 </p>
               </div>
             </div>
-            <div class="about3">
+            <div data-aos="fade-right" class="about3">
               <span><b>CREATIVE SOLUTIONS</b></span>
               <p>
                 We are all about creativity and it concerns everything we do to
@@ -379,13 +380,13 @@
           <div class="res d-flex flex-column flex-lg-row gap-2">
             <div class="d-flex flex-column flex-md-column flex-lg-column gap-2">
               <div class="d-flex flex-column flex-sm-row gap-2">
-                <div class="pic1">
+                <div data-aos="flip-up" class="pic1">
                   <img
                     src="/public/img/fullwidth-masonry-gallery-7-420x330.jpg"
                     alt=""
                   />
                 </div>
-                <div class="pic2">
+                <div data-aos="flip-up" class="pic2">
                   <img
                     src="/public/img/fullwidth-masonry-gallery-8-420x330.jpg"
                     alt=""
@@ -393,27 +394,27 @@
                 </div>
               </div>
               <div>
-                <img
+                <img  data-aos="flip-up"
                   src="/public/img/fullwidth-masonry-gallery-10-870x330.jpg"
                   alt=""
                 />
               </div>
             </div>
             <div class="d-flex flex-column flex-sm-row gap-2 order-sm-3">
-              <div class="pic3">
+              <div data-aos="flip-up" class="pic3">
                 <img
                   src="/public/img/fullwidth-masonry-gallery-9-420x690.jpg"
                   alt=""
                 />
               </div>
               <div class="d-flex flex-column gap-2">
-                <div class="pic4">
+                <div data-aos="flip-up" class="pic4">
                   <img
                     src="/public/img/fullwidth-masonry-gallery-11-420x330.jpg"
                     alt=""
                   />
                 </div>
-                <div class="pic6">
+                <div data-aos="flip-up" class="pic6">
                   <img
                     src="/public/img/fullwidth-masonry-gallery-6-420x330.jpg"
                     alt=""
@@ -459,8 +460,8 @@
           <div class="designer-slide2">
             <img src="/public/img/team-6-370x366.jpg" alt="" />
             <div class="infor">
-              <div class="name-designer"><b>RYAN WILSON</b></div>
-              <div class="positions">FOUNDER, SENIOR DESIGNER</div>
+              <div class="name-designer"><b>ANN ANDERSON</b></div>
+              <div class="positions">JUNIOR DESIGNER</div>
             </div>
           </div>
           <div class="designer-slide2">
@@ -473,22 +474,22 @@
           <div class="designer-slide2">
             <img src="/public/img/team-16-370x366.jpg" alt="" />
             <div class="infor">
-              <div class="name-designer"><b>RYAN WILSON</b></div>
-              <div class="positions">FOUNDER, SENIOR DESIGNER</div>
+              <div class="name-designer"><b>SAMUEL MILLER</b></div>
+              <div class="positions">SENIOR ARCHITECT</div>
             </div>
           </div>
           <div class="designer-slide2">
             <img src="/public/img/team-4-370x366.jpg" alt="" />
             <div class="infor">
-              <div class="name-designer"><b>RYAN WILSON</b></div>
-              <div class="positions">FOUNDER, SENIOR DESIGNER</div>
+              <div class="name-designer"><b>JILL PETERSON</b></div>
+              <div class="positions">DESIGNER</div>
             </div>
           </div>
           <div class="designer-slide2">
             <img src="/public/img/team-5-370x366.jpg" alt="" />
             <div class="infor">
-              <div class="name-designer"><b>RYAN WILSON</b></div>
-              <div class="positions">FOUNDER, SENIOR DESIGNER</div>
+              <div class="name-designer"><b>WILL O’BRIEN</b></div>
+              <div class="positions">DESIGNER</div>
             </div>
           </div>
         </div>
